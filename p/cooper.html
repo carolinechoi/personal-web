@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Cooper - case study</title>
+    <link rel="shortcut icon" href="../assets/images/skeptic.png" type="image/x-icon">    
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/applify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+</head>
+<body>
+    <a id="goHome" href="../index.html">C</a>
+    <ul class="menu">
+            <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" id="current" href="#">Work</a>
+                        <div class="dropdown-content">
+                                <a href="../p/applify.html">01. Applify</a>
+                                <a href="../p/cooper.html" id="current">02. Cooper</a>
+                                <a href="../p/village.html">03. Village</a>
+                                <a href="../p/hpgeo-clock.html">04. Geo-Clock</a>
+                        </div>
+                    </div>
+                </li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <p id="title" class="animated fadeInUp delay-1s">02. Cooper</p>
+    <p id="desc" class="animated fadeInUp delay-1s">A study in minimalistic design and Google Firebase functions.</p>
+    <div class="rest">
+        <img class="opening" src="../assets/images/headerCooper.png">                    
+        <div class="grid2">
+                <div id="split-item">
+                    <p id="header">“In the successful organization, no detail is too small to escape close attention.”</p>
+                    <p id="paragraph">Cooper is my first mobile app. It started out as a little project in a study of Firebase database functions, with me following a YouTube tutorial and learning Ionic on the fly (shoutout to my homie <a href="https://www.youtube.com/channel/UCYJ9O6X1oFt7YGXpfRwrcWg">Paul Halliday</a>). 
+                        <br><br><br>Eventually I discovered minimalistic design on Dribble and began experimenting with it on Cooper. </p>
+                </div>
+                <div id="facts">
+                    <div class="p">
+                        <p id="fax">Project Type</p>
+                        <p id="bullet">hybrid mobile app, iOS & Android</p>
+                        <p id="fax">Languages</p>
+                        <p id="bullet">HTML, SCSS, Typescript</p>
+                        <p id="fax">Framework & Backend</p>
+                        <p id="bullet">Built on Ionic (v.4) using Google Firebase Realtime Database and Angular JS</p>
+                        <p id="fax">Timeline</p>
+                        <p id="bullet">Aug 2018 - Dec 2018</p>
+                    </div>
+                </div> 
+        </div>
+        <div class="grid">
+            <div id="split-item">
+                    <p id="paragraph">
+                        <b id="head">Choosing a Framework</b>
+                        <br><br>When I first started, I did not know anything about frameworks or mobile apps, other than that I needed $99 for an Apple Dev. membership (not good news for a broke high school student). I was fresh out of <a href="https://www.kodewithklossy.com">Kode With Klossy</a> and was an amateur Ruby, HTML, CSS, JS coder. Heck, I wasn’t even a proficient JS coder. The only JS I’d done was a simple animation with JQuery. 
+                        <br><br><br>But one thing was for sure. I wanted to try my hand at a mobile app. My time at Kode With Klossy had brought about an enthusiasm for learning. It even taught me that code can be learnt by anyone anytime, as long as enough effort is put in. 
+                        <br><br><br>I began researching different options for mobile apps, my search taking me through various frameworks, preprocessors and nomenclature. 
+                        <br><br><br>Finally, I discovered Ionic and a surprising amount of YouTube tutorials surrounding the framework and its dependencies. 
+                        <br><br><br><br><br><b id="head">The Build-Up</b>
+                        <br><br>After following YouTube tutorials for around three weeks or so, I figured I was ready to try a real app on my own. 
+                        <br><br><br>I started by sketching out several drafts of what I wanted my simple (but sophisticated) app to look like. Eventually, they evolved into more defined, polished sketches. 
+                        <br><br><br><img class="mockup" src="../assets/images/IMG_7453.JPG">
+                        <br><br><br>Then, with the preliminary drafts in hand, I picked out a colour scheme: 
+                        <br><br><br><img class="colours" src="../assets/images/coloursCooper.png">
+                        <br><br><br><br><br><b id="head">The Code</b>
+                        <br><br>As with more projects, the hardest part of the programming side was concentrated in back-end. Specifically, implementing queries and snapshots in my typescript files, because in order to retrieve Firebase values, I needed to obtain the Firebase generated keys from my database.  
+                        <br><br><br>Ultimately, after long evenings of trial and error, Stack Overflow questions, and hand-written code, I figured out a system for the whole JSON and learned how to query. 
+                        <br><br><br><br><br><b id="head">Updating Versions</b>
+                        <br><br>Halfway through my coding process, Ionic released a new version of its framework: version 4. The problem was, v. 4 uses Angular routing and has a whole different set of Ionic APIs. 
+                        <br><br><br>It wasn’t too hard to look up the v. 4 div tag names and change them in, but it did take a very long time. The entire process took nearly two weeks, in fact, squeezed in between school and classwork.
+                        <br><br><br><br><br><b id="head">Angular Routing</b>
+                        <br><br>Due to the Ionic version update, I was introduced to a new way of routing—Angular style. This actually helped quite a bit with redirecting users to their respective pages.
+                        <br><br><br>For example, if a user weren’t logged in, I would want to take them to the login page. And, vice versa, if a user <i>were</i> logged in, I would want to route them straight to the home page, chock full of their own lists. 
+                        <br><br><br>With Angular routing and Firebase auth functions, I achieved those goals effortlessly. (Ok, that’s a lie, it took me a good week to figure it all out.)
+                        <br><br><br><br><br><b id="head">Final (For Real)</b>
+                        <br><br>As I learned more about minimalism and listened to more Ariana Grande, my designs for Cooper evolved into this beaut.
+                        <br><br><br><img class="opening" src="../assets/images/iosScreensCooper.png">
+                        <br><br><br><br><br><b id="head">Reflection</b>
+                        <br><br>I really take to heart the whole process of designing and coding Cooper, and not only because it was my first app. Here are a few takeaways.
+                        <br><br><br><b id="subHead">Design Beforehand</b>
+                        <br>As I finished up Cooper, I realised that if I hadn’t drawn out my early ideas for the design, I would have been utterly lost. For me particularly, without even a simple set of guidelines, I would have spent far too much time on the front-end and lost valuable time working on back-end. 
+                        <br><br><br><b id="subHead">Ask Questions</b>
+                        <br>If I had given into my initial shyness at asking questions, I would never have finished the app. It’s imperative to turn to the resources that I have, such as older friends, software engineer advisors, and even random people on Stack Overflow. 
+                        <br><br><br><b id="subHead">Be Humble</b>
+                        <br>There are so many more things that I have left to learn as a coder. Recognising that I’m not some great coding warrior opens me up to opportunities to learn and challenge myself. 
+                    </p>
+                </div>  
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>© Caroline Choi, 2019</p>
+    <img src="../assets/images/blob.svg"><a href="credits.html" id="showModal"><p id="credits">Credits</p></a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../script/main.js"></script>
+</html>

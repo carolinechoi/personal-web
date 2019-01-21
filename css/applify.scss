@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Lato|Cormorant+Garamond');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$fontB: 'Open Sans'; 
+$fontT: 'Source Serif Pro';
+$accentL: #f26f61;
+$primary: white;
+$accent: #d55953;
+$grey: #5c5c5c;
+
+html, body, ul {
+    background-color: white;
+}
+ul {
+    background-color: white;
+    li {
+        a {
+            color: black;
+        }
+    }
+    list-style: none;
+}
+#current {
+    color: $accentL;
+}
+#title {
+    font-family: $fontT;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    font-weight: semi-bold;
+}
+#desc {
+    display: table;
+    margin: 0 auto;
+    margin-top: -30px;
+    font-family: $fontT;
+    color: black;
+    text-align:center;
+    font-size: 20px;
+    width: 65%;
+    margin-bottom: 100px;
+}
+.rest {
+    background-color: $primary;
+}
+.opening {
+    width: 90%;
+    display: table;
+    margin: 0 auto;
+}
+.colours {
+    width: 50%;
+}
+#header {
+    font-family: $fontT;
+    font-size: 35px;
+    font-weight: semi-bold;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns:  60% 40%;
+    padding: 65px;
+    padding-top: -50px;
+    margin-top: -50px;
+    #split-item {
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid $primary;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 20px;
+        font-size: 30px;
+        #paragraph {
+            font-family: $fontB;
+            font-size: 17px;
+            color: $grey;
+            .mockup {
+                width: 80%;
+                display: table;
+                margin: 0 auto;
+            }
+            #head {
+                font-size: 30px;
+                font-family: $fontT;
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+    #facts {
+        border-radius: 2px;
+        background-color: white;
+        margin-right: 10px;
+        margin-left: 80px;
+        padding: 13px;
+        font-size: 30px;
+        height: 230px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        #fax, #bullet {
+            color: black;
+            font-weight: semi-bold;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 25px;
+            font-family: $fontT;
+        }
+        a {
+            text-decoration: none;
+        }
+        #bullet {
+            font-family: $fontB;
+            text-transform: none;
+            text-decoration: none;
+            font-size: 15px;
+            margin-top: -15px;
+            font-weight: normal;
+            color: $grey;
+        }
+        .profile {
+            width: 100%;
+            display: table;
+            margin: 0 auto;
+            margin-top: 20px;
+            // margin-left: -10px;
+        }
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns:  auto;
+    padding: 65px;
+    padding-top: -20px;
+    margin-top: -110px;
+    #split-item {
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid $primary;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 20px;
+        font-size: 30px;
+        #paragraph {
+            font-family: $fontB;
+            font-size: 17px;
+            color: $grey;
+            .mockup {
+                width: 80%;
+                display: table;
+                margin: 0 auto;
+            }
+            #head, #subHead {
+                font-size: 25px;
+                font-family: $fontT;
+                font-weight: 500;
+                color: black;
+            }
+            #subHead {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+footer {
+    background-color: black;
+}
+.credits {
+    margin-top: 130px;
+}
+// List of icons and colours
+$icon-list: (
+    twitter "\f099" #33333333,
+    instagram "\f16d" #33333333,
+    github "\f113" #33333333,
+);
+
+// Each loop for creating the icon CSS
+@each $icon, $unicode, $icon-background in $icon-list {
+  
+    .icon--#{$icon} {
+        &::before {
+            content: $unicode;
+        }
+    }
+
+    .social__icon--#{$icon} {
+      background-color: $icon-background;
+      
+        &:hover {
+          // Swap black for white to make the icons lighter on hover
+          background-color: mix(black, $icon-background, 15%);
+        }
+      
+    }
+
+}
+
+// Display icons next to each other
+.social__item {
+    display: inline-block;
+    margin-right: 0.1em;
+}
+
+// Basic icon style
+.icon {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Extend icon to all other icons
+[class^="icon--"] {
+	@extend .icon;
+}
+
+// Icon background
+.social__icon {
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+  // Remove border radius to make icons square
+  border-radius:100%;
+  width: 2.2em;
+  height: 2.2em;  
+  // Vertical Centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Extend social__icon to all other icons
+[class^="social__icon"] {
+	@extend .social__icon;
+}
+
+// Add padding to icons container
+.social__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
