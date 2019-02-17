@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Lato|Cormorant+Garamond');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$fontB: 'Open Sans'; 
+$fontT: 'Source Serif Pro';
+$accentL: #f26f61;
+$primary: white;
+$accent: #d55953;
+$grey: #5c5c5c;
+
+.publications {
+    background-color: white;
+}
+.grid-container {
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns:  50% 50%;
+    padding: 95px;
+    margin-bottom: 30px;
+    text-align: center;
+    #grid-item {
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid #e7e7e7;
+        margin-top: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    #grid-item:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+        box-shadow: 0px 0px 0px #e7e7e7;
+        cursor: pointer;
+    }
+    #grid-title {
+        font-family: $fontT;
+        font-size: 30px;
+        color: black;
+    }
+    #grid-date {
+        font-family: $fontB;
+        font-size: 15px;
+        color: black;
+        margin-top: -25px;
+        font-style: italic;
+    }
+    #grid-descrptn {
+        margin-top: 25px;
+        font-family: $fontB;
+        font-size: 17px;
+        color: black;
+    }
+    a {
+        text-decoration: none;
+    }
+}

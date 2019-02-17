@@ -4,14 +4,15 @@
         <link rel="shortcut icon" href="../assets/images/skeptic.png" type="image/x-icon">    
         <link href="../css/main.css" rel="stylesheet">
         <link href="../css/applify.css" rel="stylesheet">
+        <link href="../css/publications.css" rel="stylesheet">
         <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     </head>
     <body>
-        <a id="goHome" href="index.html">C</a>
+        <a id="goHome" href="../index.html">C</a>
         <ul class="menu">
             <li>
                 <div class="dropdown">
-                    <a class="dropbtn" id="current" href="#">Work</a>
+                    <a class="dropbtn" href="#">Work</a>
                     <div class="dropdown-content">
                             <a href="../p/applify.html">01. Applify</a>
                             <a href="../p/cooper.html">02. Cooper</a>
@@ -20,43 +21,22 @@
                     </div>
                 </div>
             </li>
-            <li><a id="current" href="publications.html">Publications</a></li>
+            <li><a id="current" href="/p/publications.html">Publications</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-        <div id="intro">
-            <p id="title" class="animated fadeInUp delay-1s">Caroline Choi is<br>a coder.</p>
-            <img class="animated fadeInRight delay-1s" src="assets/images/me.png">
-        </div>
-        <div class="slantClass">
-            <div class="slant">
-                    <p id="projectsT">PROJECTS</p>
+        <div class="publications">
+                <p id="list-title">PUBLICATIONS</p>
                     <div class="grid-container">
+                        <a href="https://alligator.io/ionic/pwas">
                             <div id="grid-item">
-                                <p id="number">01.</p>
-                                <p id="name">Applify</p>
-                                <p id="desc">On PWAs and teenagers.</p>
-                                <a href="/p/applify.html">More</a>                                
+                                    <p id="grid-title">
+                                    Creating PWAs with Ionic 4
+                                    </p>
+                                    <p id="grid-date">February 14, 2019</p>
+                                    <p id="grid-descrptn">Using @angular/PWA and Firebase Hosting to create a sustainble Ionic 4 progressive web app (PWA).</p>
                             </div>
-                            <div id="grid-item">
-                                    <p id="number">02.</p>
-                                    <p id="name">Cooper</p>
-                                    <p id="desc">A study in minimalistic design and Google Firebase functions.</p>
-                                    <a href="/p/cooper.html">More</a>                                
-                            </div>
-                            <div id="grid-item">
-                                    <p id="number">03.</p>
-                                    <p id="name">Village</p>
-                                    <p id="desc">On Karlie Kloss and immigrants.</p>
-                                    <a href="/p/village.html">More</a>                                
-                            </div>
-                            <div id="grid-item">
-                                    <p id="number">04.</p>
-                                    <p id="name">Harry Potter Geo-Clock</p>
-                                    <p id="desc">On the Weasley family & muggle hardware.</p>
-                                    <a href="/p/hpgeo-clock.html">More</a>                                
-                            </div>
-                    </div>
-            </div>
+                        </a>
+                </div>
         </div>
         </body>
         <footer>
