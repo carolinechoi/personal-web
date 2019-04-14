@@ -57,26 +57,26 @@
                         <br><br>3. Create a friendly competition for points.
                         <br><br><br><br><br><b id="head">The Design Process</b>
                         <br><br>Before coding anything, I always sketch out a design and repeat my Mantra of Minimalism: “Keep It Simple Stupid”. 
-                        <br><br><br><img id="mockup" src="../assets/images/designNB.png">
+                        <br><br><br><img class="mockup" src="../assets/images/designNB.png">
                         <br><br><br>Once I identified my user’s basic requirements, I drew the different pages out, helping me conceptualise an idea of how the final product was going to shape and giving a set of guidelines for my front-end code.
-                        <br><br><br><img class="lazyload" id="mockup" data-src="../assets/images/IMG_7459.JPG">
+                        <br><br><br><img class="mockup" src="../assets/images/IMG_7459.JPG">
                         <br><br><br>For colour scheme, I went with aquamarine and purple. The bright colours appealed to me as teen-friendly and exciting.  
                         <br><br><br><br><br><b id="head">User Flow</b>
                         <br><br>The user flow was important. Teenagers are easily annoyed by complicated buttons and tabs. So I opted for a max of 6 screens (8 screens for admin).
-                        <br><br><br><img class="lazyload" id="mockup" data-src="../assets/images/applifyUF.png">
+                        <br><br><br><img class="mockup" src="../assets/images/applifyUF.png">
                         <br><br><br><br><br><b id="head">The Code</b>
                         <br><br>The hardest part of the coding to this project was filtering Google’s Firebase Database by values. Essentially, yours truly wanted a leaderboard so that club members could compete with each other over points earned from attending events. A leaderboard would incentivize participating in club activities and get the kids excited. 
                         <br><br><br>My initial Firebase JSON looked like this inarticulate piece: 
-                        <br><br><br><img class="lazyload" data-src="../assets/images/oldfbjson.png">
+                        <br><br><br><img src="../assets/images/oldfbjson.png">
                         <br><br><br>See the problem? To get to the ‘points’ child, I needed the user UID of each user’s node. And when I got down to that node level, the query firebase.orderByChild(‘points’) would only return <i>one</i> value—that of the user. Essentially, the orderByChild() query was meaningless in this scenario, because while the code would return the users’ points, it wouldn’t be in a chronological order. 
                         <br><br><br>After a day of mulling things over, I came up with a simple but effective solution:
-                        <br><br><br><img class="lazyload" data-src="../assets/images/fbjson.png">
+                        <br><br><br><img src="../assets/images/fbjson.png">
                         <br><br><br>Here, the user UID is stored under a node that also includes the points. This way, only one query would be necessary, <i>and</i> would query by numerical order. Problem solved and new lesson learned! 
                         <br><br><br><br><br><b id="head">End Result</b>
                         <br><br>Isabella, my club’s Vice President, came up with our super punny name, Applify, and we introduced the app to our club in January of 2019. 
                         <br><br><br>I ended up hosting the app on Firebase for two reasons: One, I was too broke to purchase an Apple developer membership, and two, it’s quicker to type in a link than go through the trouble to download. 
                         <br><br><br><br><br><b id="head">iOS App Screens</b>
-                        <br><br><br><img class="lazyload" id="mockup" data-src="../assets/images/iosScreens.png">
+                        <br><br><br><img class="mockup" src="../assets/images/iosScreens.png">
                         <br><br><br>(As you can see, some of my initial designs didn't make the cut to the final product.)
                         <br><br><br>The upcoming event page is being put to great use. Students are signing up through it and we’ve had a 50% increase in club participation. Plus, they’re getting really into the whole competition thing.
                         <br><br><br>Overall? I'd say success.  
