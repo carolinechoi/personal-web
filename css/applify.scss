@@ -44,12 +44,12 @@ ul {
 .rest {
     background-color: $primary;
 }
-.opening {
+#opening {
     width: 90%;
     display: table;
     margin: 0 auto;
 }
-.colours {
+#colours {
     width: 50%;
 }
 #header {
@@ -75,7 +75,7 @@ ul {
             font-family: $fontB;
             font-size: 17px;
             color: $grey;
-            .mockup {
+            #mockup {
                 width: 80%;
                 display: table;
                 margin: 0 auto;

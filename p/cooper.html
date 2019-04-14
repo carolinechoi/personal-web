@@ -5,6 +5,7 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/applify.css" rel="stylesheet">
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <script src="../node_modules/lazysizes/lazysizes.js"></script>
 </head>
 <body>
     <a id="goHome" href="../index.html">C</a>
@@ -26,7 +27,7 @@
     <p id="title" class="animated fadeInUp delay-1s">02. Cooper</p>
     <p id="desc" class="animated fadeInUp delay-1s">A study in minimalistic design and Google Firebase functions.</p>
     <div class="rest">
-        <img class="opening" src="../assets/images/headerCooper.png">                    
+        <img id="opening" class="lazyload" data-src="../assets/images/headerCooper.png">                    
         <div class="grid2">
                 <div id="split-item">
                     <p id="header">“In the successful organization, no detail is too small to escape close attention.”</p>
@@ -57,9 +58,9 @@
                         <br><br><br><br><br><b id="head">The Build-Up</b>
                         <br><br>After following YouTube tutorials for around three weeks or so, I figured I was ready to try a real app on my own. 
                         <br><br><br>I started by sketching out several drafts of what I wanted my simple (but sophisticated) app to look like. Eventually, they evolved into more defined, polished sketches. 
-                        <br><br><br><img class="mockup" src="../assets/images/IMG_7453.JPG">
+                        <br><br><br><img class="lazyload" id="mockup" data-src="../assets/images/IMG_7453.JPG">
                         <br><br><br>Then, with the preliminary drafts in hand, I picked out a colour scheme: 
-                        <br><br><br><img class="colours" src="../assets/images/coloursCooper.png">
+                        <br><br><br><img id="colours" class="lazyload" data-src="../assets/images/coloursCooper.png">
                         <br><br><br><br><br><b id="head">The Code</b>
                         <br><br>As with more projects, the hardest part of the programming side was concentrated in back-end. Specifically, implementing queries and snapshots in my typescript files, because in order to retrieve Firebase values, I needed to obtain the Firebase generated keys from my database.  
                         <br><br><br>Ultimately, after long evenings of trial and error, Stack Overflow questions, and hand-written code, I figured out a system for the whole JSON and learned how to query. 
@@ -72,7 +73,7 @@
                         <br><br><br>With Angular routing and Firebase auth functions, I achieved those goals effortlessly. (Ok, that’s a lie, it took me a good week to figure it all out.)
                         <br><br><br><br><br><b id="head">Final (For Real)</b>
                         <br><br>As I learned more about minimalism and listened to more Ariana Grande, my designs for Cooper evolved into this beaut.
-                        <br><br><br><img class="opening" src="../assets/images/iosScreensCooper.png">
+                        <br><br><br><img class="lazyload" id="opening" src="../assets/images/iosScreensCooper.png">
                         <br><br><br><br><br><b id="head">Reflection</b>
                         <br><br>I really take to heart the whole process of designing and coding Cooper, and not only because it was my first app. Here are a few takeaways.
                         <br><br><br><b id="subHead">Design Beforehand</b>
